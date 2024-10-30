@@ -666,7 +666,8 @@ protected:
     {
         auto traits = climate::ClimateTraits();
         traits.set_supports_current_temperature(true);
-        traits.set_supported_modes({ CLIMATE_MODE_OFF, CLIMATE_MODE_HEAT_COOL, CLIMATE_MODE_COOL, CLIMATE_MODE_HEAT, CLIMATE_MODE_DRY, CLIMATE_MODE_FAN_ONLY });
+        //traits.set_supported_modes({ CLIMATE_MODE_OFF, CLIMATE_MODE_HEAT_COOL, CLIMATE_MODE_COOL, CLIMATE_MODE_HEAT, CLIMATE_MODE_DRY, CLIMATE_MODE_FAN_ONLY });
+        traits.set_supported_modes({ CLIMATE_MODE_OFF, CLIMATE_MODE_COOL, CLIMATE_MODE_HEAT, CLIMATE_MODE_DRY, CLIMATE_MODE_FAN_ONLY });
         traits.set_supports_two_point_target_temperature(false);
         traits.set_visual_min_temperature(this->minimum_temperature_);
         traits.set_visual_max_temperature(this->maximum_temperature_);
