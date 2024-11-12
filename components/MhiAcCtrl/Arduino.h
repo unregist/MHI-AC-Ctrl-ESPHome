@@ -37,7 +37,7 @@
 //#include "esp8266-compat.h"
 #include "soc/gpio_reg.h"
 
-#include "stdlib_noniso.h"
+//#include "stdlib_noniso.h"
 #include "binary.h"
 #include "extra_attr.h"
 
