@@ -54,9 +54,12 @@ void MHI_AC_Ctrl_Core::reset_old_values() {  // used e.g. when MQTT connection t
 
 void MHI_AC_Ctrl_Core::init() {
   //MeasureFrequency(m_cbiStatus);
-  pinMode(SCK_PIN, INPUT);
-  pinMode(MOSI_PIN, INPUT);
-  pinMode(MISO_PIN, OUTPUT);
+  //pinMode(SCK_PIN, INPUT);
+  //pinMode(MOSI_PIN, INPUT);
+  //pinMode(MISO_PIN, OUTPUT);
+  gpio_set_direction(SCK_PIN, GPIO_MODE_INPUT);
+  gpio_set_direction(MOSI_PIN, GPIO_MODE_INPUT);
+  gpio_set_direction(MISO_PIN, GPIO_MODE_OUTPUT);
   MHI_AC_Ctrl_Core::reset_old_values();
 }
 
