@@ -1,6 +1,21 @@
 #pragma once
 
-#include "Arduino.h"
+//#include "Arduino.h"
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdarg.h>
+#include <stddef.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <inttypes.h>
+#include <atomic>
+#include "esp_timer.h"
+
+
+typedef bool boolean;
+typedef uint8_t byte;
+typedef unsigned int word;
 
 
 
