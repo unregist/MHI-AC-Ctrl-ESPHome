@@ -11,7 +11,7 @@
 #include <inttypes.h>
 #include <atomic>
 #include "esp_timer.h"
-#include <pgmspace.h>
+#include <avr/pgmspace.h>
 
 typedef bool boolean;
 typedef uint8_t byte;
