@@ -11,7 +11,16 @@
 #include <inttypes.h>
 #include <atomic>
 #include "esp_timer.h"
+#include "freertos/FreeRTOS.h"
+#include "freertos/task.h"
+#include <math.h>
+#include <string.h>
 
+#include "driver/timer.h"
+#include "driver/spi_slave.h"
+#include "driver/gpio.h"
+#define LOG_LOCAL_LEVEL ESP_LOG_DEBUG
+#include "esp_log.h"
 typedef bool boolean;
 typedef uint8_t byte;
 typedef unsigned int word;
