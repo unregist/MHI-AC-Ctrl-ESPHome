@@ -8,6 +8,8 @@
 #include "freertos/task.h"
 #include <math.h>
 #include <string.h>
+#define uint8_t byte
+
 
 // comment out the data you are not interested, but at least leave one row !
 const byte opdata[][2] PROGMEM = {
