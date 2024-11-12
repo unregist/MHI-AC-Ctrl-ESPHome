@@ -60,9 +60,9 @@ const byte opdata[][2] = {
 #define minTimeInternalTroom 5000              // minimal time in ms used for Troom internal sensor changes for publishing to avoid jitter 
 
 // pin defintions
-#define SCK_PIN  14
-#define MOSI_PIN 13
-#define MISO_PIN 12
+#define SCK_PIN  GPIO_NUM_14
+#define MOSI_PIN GPIO_NUM_13
+#define MISO_PIN GPIO_NUM_12
 
 // constants for the frame
 #define SB0 0
