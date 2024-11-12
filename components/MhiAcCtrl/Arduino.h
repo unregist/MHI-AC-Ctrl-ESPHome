@@ -188,17 +188,17 @@ void shiftOut(uint8_t dataPin, uint8_t clockPin, uint8_t bitOrder, uint8_t val);
 #include <algorithm>
 #include <cmath>
 
-#include "WCharacter.h"
-#include "WString.h"
-#include "Stream.h"
-#include "Printable.h"
-#include "Print.h"
-#include "IPAddress.h"
-#include "Client.h"
-#include "Server.h"
-#include "Udp.h"
-#include "HardwareSerial.h"
-#include "Esp.h"
+//#include "WCharacter.h"
+//#include "WString.h"
+//#include "Stream.h"
+//#include "Printable.h"
+//#include "Print.h"
+//#include "IPAddress.h"
+//#include "Client.h"
+//#include "Server.h"
+//#include "Udp.h"
+//#include "HardwareSerial.h"
+//#include "Esp.h"
 
 // Use float-compatible stl abs() and round(), we don't use Arduino macros to avoid issues with the C++ libraries
 using std::abs;
