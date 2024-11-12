@@ -32,9 +32,13 @@ const byte opdata[][2] PROGMEM = {
 #define minTimeInternalTroom 5000              // minimal time in ms used for Troom internal sensor changes for publishing to avoid jitter 
 
 // pin defintions
-#define SCK_PIN  14
-#define MOSI_PIN 13
-#define MISO_PIN 12
+//#define SCK_PIN  14
+//#define MOSI_PIN 13
+//#define MISO_PIN 12
+// Pin Definitions for my custom board ESP32-C3 v0.2 and below
+#define SCK_PIN  6
+#define MOSI_PIN 7
+#define MISO_PIN 2
 
 // constants for the frame
 #define SB0 0
