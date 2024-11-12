@@ -21,6 +21,9 @@
 #include "driver/gpio.h"
 #define LOG_LOCAL_LEVEL ESP_LOG_DEBUG
 #include "esp_log.h"
+#define lowByte(w)  ((uint8_t)((w) & 0xff))
+#define highByte(w) ((uint8_t)((w) >> 8))
+
 typedef bool boolean;
 typedef uint8_t byte;
 typedef unsigned int word;
