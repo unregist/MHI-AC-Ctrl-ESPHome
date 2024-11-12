@@ -1,6 +1,7 @@
 #pragma once
 
-#include "Arduino.h"
+//#include <Arduino.h>
+typedef uint8_t byte;
 
 
 // comment out the data you are not interested, but at least leave one row !
