@@ -155,9 +155,12 @@ public:
             room_temp_api_timeout_ms = millis();
             ESP_LOGD("mhi_ac_ctrl", "did not receive a room_temp_api value, using IU temperature sensor");
         }
-
+        // Changed Time to 200ms instead of 100, I got a bunch of -4 errors when at 100
         int ret = mhi_ac_ctrl_core.loop(200);
-        if (ret < 0)
+        // This AC is a very old model that does not even support the MHI AC Wifi Module. 
+        // The CNS port is meant for a remote display. Changing error messages to only display -3 and -4
+        // -1 and -2 happen continuously because the AC unit also send out messages not relevant
+        if (ret < -2)
             ESP_LOGW("mhi_ac_ctrl", "mhi_ac_ctrl_core.loop error: %i", ret);
     }
     // static time_t _defaultTimeCB(void) {
