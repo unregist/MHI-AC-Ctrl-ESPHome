@@ -157,7 +157,7 @@ public:
         }
 
         int ret = mhi_ac_ctrl_core.loop(200);
-        if (ret < -2)
+        if (ret < 0)
             ESP_LOGW("mhi_ac_ctrl", "mhi_ac_ctrl_core.loop error: %i", ret);
     }
     // static time_t _defaultTimeCB(void) {
