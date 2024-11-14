@@ -264,7 +264,6 @@ static byte MOSI_frame[33];
   checksum = calc_checksum(MOSI_frame);
   if (((MOSI_frame[SB0] & 0xfe) != 0x6c) | (MOSI_frame[SB1] != 0x80) | (MOSI_frame[SB2] != 0x04))
     return err_msg_invalid_signature;
-    ESP_LOGW("mhi_ac_ctrl", "frame: %i", MOSI_frame);
   if ((MOSI_frame[CBH] << 8 | MOSI_frame[CBL]) != checksum)
     return err_msg_invalid_checksum;
 
