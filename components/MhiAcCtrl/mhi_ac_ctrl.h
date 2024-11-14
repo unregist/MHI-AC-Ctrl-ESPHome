@@ -156,8 +156,8 @@ public:
             ESP_LOGD("mhi_ac_ctrl", "did not receive a room_temp_api value, using IU temperature sensor");
         }
 
-        int ret = mhi_ac_ctrl_core.loop(100);
-        if (ret < 0)
+        int ret = mhi_ac_ctrl_core.loop(160);
+        if (ret < -2)
             ESP_LOGW("mhi_ac_ctrl", "mhi_ac_ctrl_core.loop error: %i", ret);
     }
     // static time_t _defaultTimeCB(void) {
