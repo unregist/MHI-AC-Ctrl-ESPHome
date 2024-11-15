@@ -36,8 +36,8 @@ const byte opdata[][2] PROGMEM = {
 //#define MOSI_PIN 13
 //#define MISO_PIN 12
 // pin definitions for a bodge job ESP32 (non C3) I had lying around
-#define SCK_PIN  22
-#define MOSI_PIN 21
+#define SCK_PIN  21
+#define MOSI_PIN 22
 #define MISO_PIN 23
 
 // constants for the frame
